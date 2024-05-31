@@ -1,0 +1,14 @@
+KR KMP bndmq2 Boyer-Moore BXS Backward-OM skip Hash3 FS SSM SBNDM BSDM 
+2 4 8 16 32 64 128 256 
+2 KR bndmq2 bndmq2 skip BSDM BSDM BSDM BSDM 
+4 KR bndmq2 bndmq2 bndmq2 bndmq2 BXS BSDM BXS 
+8 KR bndmq2 bndmq2 bndmq2 bndmq2 bndmq2 BXS BSDM 
+16 SBNDM bndmq2 bndmq2 bndmq2 bndmq2 bndmq2 bndmq2 BXS 
+32 SBNDM bndmq2 bndmq2 bndmq2 bndmq2 bndmq2 bndmq2 bndmq2 
+64 SBNDM bndmq2 BXS bndmq2 bndmq2 bndmq2 bndmq2 BXS 
+128 SBNDM BXS BXS BXS BXS BXS BXS BXS 
+256 Backward-OM Hash3 Hash3 Hash3 Hash3 Hash3 Hash3 Hash3 
+512 Backward-OM bndmq2 Hash3 Hash3 Hash3 Hash3 Hash3 Hash3 
+1024 Backward-OM bndmq2 Hash3 bndmq2 bndmq2 Hash3 Hash3 bndmq2 
+2048 SBNDM bndmq2 Hash3 bndmq2 bndmq2 bndmq2 bndmq2 bndmq2 
+4096 SBNDM bndmq2 bndmq2 bndmq2 bndmq2 bndmq2 bndmq2 bndmq2 
