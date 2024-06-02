@@ -16,7 +16,7 @@
 class bom : public Algorithm {
     public:
     const char* name() const override {
-        return "Backward-OM";
+        return "BOM";
     }
     int getTransition(unsigned char *x, int p, List L[], unsigned char c) {
         List cell;

@@ -9,12 +9,11 @@
 #include "include/main_header.h"
 #include "include/AUTOMATON.h"
 #include "Algorithm.h"
-#include "bm.h"
 
 class skip : public Algorithm {
 public:
     const char* name() const override {
-        return "skip";
+        return "Skip";
     }
     int search(unsigned char *x, int m, unsigned char *y, int n) override {
         int i, j, count, h, k;

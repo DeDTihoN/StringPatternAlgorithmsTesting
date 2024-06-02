@@ -27,4 +27,5 @@ add_executable(estimatingStringPatternAlgorithms main.cpp
         ssm.h
         sbndm.h
         python_scripts/newscript.py
+        ssef.h
 )

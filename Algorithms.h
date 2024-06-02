@@ -19,6 +19,7 @@
 #include "sbndm.h"
 #include "ssm.h"
 #include "bsdm.h"
+#include "ssef.h"
 #include <vector>
 #include <fstream>
 #include <algorithm>
@@ -45,6 +46,7 @@ class Algorithms {
         algorithms.push_back(new ssm());
         algorithms.push_back(new sbndm());
         algorithms.push_back(new bsdm());
+//        algorithms.push_back(new SSEF());
     }
 
     vector<double> add (const vector<double> &a, const vector<double> &b) {
@@ -399,6 +401,7 @@ class Algorithms {
         file_names.push_back("tests/rand64/rand64.txt");
         file_names.push_back("tests/genome/genome.txt");
         file_names.push_back("tests/html/largeHtml.html");
+        file_names.push_back("tests/cfile/example.c");
         vector<vector<double>> absolute_results, relative_results;
         for (int i = 0; i < file_names.size(); ++i) {
             cout<<"File: "<<file_names[i]<<endl;
@@ -431,6 +434,7 @@ class Algorithms {
         file_names.push_back("tests/rand64/rand64.txt");
         file_names.push_back("tests/genome/genome.txt");
         file_names.push_back("tests/html/largeHtml.html");
+        file_names.push_back("tests/cfile/example.c");
         vector<vector<double>> absolute_results, relative_results;
         for (int i = 0; i < file_names.size(); ++i) {
             cout<<"File: "<<file_names[i]<<endl;
@@ -456,13 +460,14 @@ class Algorithms {
     void testUniquePatternFromText() {
         vector<pair<string, string>> file_names;
         file_names.push_back(
-                {"tests/literature/LOTR/The Fellowship.txt", "tests/patternWordsDataSets/google-10000-english.txt"});
+                {"tests/literature/LOTR/The Fellowship.txt", "tests/patternWordsDatasets/google-10000-english.txt"});
         file_names.push_back(
-                {"tests/literature/Ukraine/Lisova_pisnya.txt", "tests/patternWordsDataSets/ukrainianWords.txt"});
+                {"tests/literature/Ukraine/Lisova_pisnya.txt", "tests/patternWordsDatasets/ukrainianWords.txt"});
         file_names.push_back(
-                {"tests/json/accounts.json", "tests/patternWordsDataSets/jsonUniqueWords.txt"});
-        file_names.push_back({"tests/genome/genome.txt", "tests/patternWordsDataSets/genomeUniqueWords.txt"});
-        file_names.push_back({"tests/html/largeHtml.html", "tests/patternWordsDataSets/htmlUniqueWords.txt"});
+                {"tests/json/accounts.json", "tests/patternWordsDatasets/jsonUniqueWords.txt"});
+        file_names.push_back({"tests/genome/genome.txt", "tests/patternWordsDatasets/genomeUniqueWords.txt"});
+        file_names.push_back({"tests/html/largeHtml.html", "tests/patternWordsDatasets/htmlUniqueWords.txt"});
+        file_names.push_back({"tests/cfile/example.c", "tests/patternWordsDatasets/cUniqueWords.txt"});
         vector<double> absolute_results, relative_results;
         for (int i = 0; i < file_names.size(); ++i) {
             cout << "File: " << file_names[i].first << endl;

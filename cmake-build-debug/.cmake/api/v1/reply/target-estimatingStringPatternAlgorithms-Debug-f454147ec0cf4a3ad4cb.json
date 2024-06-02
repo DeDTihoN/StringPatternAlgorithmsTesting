@@ -117,7 +117,8 @@
 				19,
 				20,
 				21,
-				22
+				22,
+				24
 			]
 		},
 		{
@@ -250,6 +251,11 @@
 			"backtrace" : 1,
 			"path" : "python_scripts/newscript.py",
 			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "ssef.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

@@ -20,7 +20,7 @@
 class bndmq2 : public Algorithm {
     public:
     const char* name() const override {
-        return "bndmq2";
+        return "BNDMQ2";
     }
     int search(unsigned char *x, int m, unsigned char *y, int n) {
         unsigned int D, B[SIGMA], M, s;

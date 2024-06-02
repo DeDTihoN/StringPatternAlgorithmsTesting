@@ -52,7 +52,7 @@ class bm : public Algorithm {
             bmGs[m - 1 - suff[i]] = m - 1 - i;
     }
     const char* name() const override {
-        return "Boyer-Moore";
+        return "BM";
     }
     int search(unsigned char *x, int m, unsigned char *y, int n) override {
         int i, j, bmGs[XSIZE], bmBc[SIGMA], count;
